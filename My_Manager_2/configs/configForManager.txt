@@ -1,0 +1,10 @@
+InputFile = files/smile.jpg
+OutputFile = files/out.jpg
+ReaderClassName = comR.Reader
+WriterClassName = comW.Writer
+//Executors are run in the order they are wrote
+ExecutorClassName = comE.Executor, fayu.Executor, fayu.Executor, comE.Executor
+ReaderConfigFile = configs/configForReader.txt
+WriterConfigFile = configs/configForWriter.txt
+//Configs for executors are wrote in the order corresponding to the order of writing executors
+ExecutorConfigFile = configs/configForExecutorCODE.txt, configs/configForExecutor2CODE.txt, configs/configForExecutor2DECODE.txt,configs/configForExecutorDECODE.txt,
